@@ -1,0 +1,441 @@
+/* -------------------- GLOBAL RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f9ff;
+    color: #0b2545;
+    overflow-x: hidden;
+}
+
+/* -------------------- HERO BACKGROUND -------------------- */
+.main {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(11, 37, 69, 0.9),
+        rgba(11, 37, 69, 0.7)
+    ),
+    url("assets/images/bg.jpg") center/cover no-repeat;
+    color: white;
+}
+
+/* -------------------- NAVBAR -------------------- */
+nav {
+    max-width: 85vw;
+    margin: auto;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 160px;
+    filter: brightness(0) invert(1);
+}
+
+nav div {
+    display: flex;
+    gap: 12px;
+}
+
+/* -------------------- BUTTONS -------------------- */
+.but1 {
+    background: #1f6ae1;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.but1:hover {
+    background: #174ea6;
+    transform: translateY(-1px);
+}
+
+.but2 {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 9px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* -------------------- HERO CONTENT -------------------- */
+.hero {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    padding: 0 20px;
+}
+
+.hero .A {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero .B {
+    font-size: 1.4rem;
+    opacity: 0.95;
+}
+
+.hero .C {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* EMAIL FORM */
+.hero div {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero input {
+    width: 340px;
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+.hero input::placeholder {
+    color: #777;
+}
+
+.but3 {
+    background: #1f6ae1;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.but3:hover {
+    background: #174ea6;
+    transform: scale(1.05);
+}
+
+/* -------------------- TRENDING -------------------- */
+h2 {
+    font-size: 1.9rem;
+    margin: 45px 0 15px 8vw;
+    color: #0b2545;
+}
+
+.select {
+    display: flex;
+    gap: 15px;
+    margin-left: 8vw;
+}
+
+select {
+    padding: 8px 14px;
+    background: white;
+    color: #0b2545;
+    border: 1px solid #c7d9f3;
+    border-radius: 6px;
+}
+
+/* -------------------- MOVIE CARDS -------------------- */
+.option {
+    display: flex;
+    gap: 20px;
+    padding: 30px 8vw;
+    overflow-x: auto;
+}
+
+.bux {
+    min-width: 220px;
+    height: 320px;
+    background: linear-gradient(135deg, #ffffff, #e7f0ff);
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(31, 106, 225, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.bux:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(31, 106, 225, 0.35);
+}
+
+/* -------------------- SEPARATION -------------------- */
+.separation {
+    height: 8px;
+    background: linear-gradient(to right, #dbe9ff, #ffffff, #dbe9ff);
+}
+
+/* -------------------- FEATURE SECTIONS -------------------- */
+.first {
+    max-width: 85vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 0;
+}
+
+.first span:first-child {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #0b2545;
+}
+
+.first span:last-child {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #334e68;
+}
+
+/* -------------------- IMAGE + VIDEO -------------------- */
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 520px;
+    border-radius: 14px;
+}
+
+.secImg video {
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    width: 380px;
+    border-radius: 10px;
+}
+
+/* -------------------- FAQ -------------------- */
+.faq {
+    max-width: 75vw;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 35px;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e7f0ff;
+    padding: 22px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.faqbox:hover {
+    background: #d0e2ff;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 900px) {
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .A {
+        font-size: 2.4rem;
+    }
+
+    .hero div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero input {
+        width: 100%;
+    }
+
+    .secImg img {
+        width: 100%;
+    }
+
+    .secImg video {
+        width: 70%;
+        left: 15%;
+        top: 20%;
+    }
+}
+
+.box1 {
+    background-image: url("assets/images/image 1.png");
+    background-size: cover;
+    z-index: 4;
+}
+
+.box2 {
+    background-image: url("assets/images/image 2.png");
+    background-size: cover;
+    z-index: 4;
+}
+
+.box3 {
+    background-image: url("assets/images/image3.png");
+    background-size: cover;
+    z-index: 4;
+}
+
+.box4 {
+    background-image: url("assets/images/image4.png");
+    background-size: cover;
+    z-index: 4;
+}
+
+.box5 {
+    background-image: url("assets/images/image5.png");
+    background-size: cover;
+    z-index: 4;
+}
+/* FOOTER SECTION */
+footer {
+    background-color: #0b3c5d; /* Dark Blue */
+    color: #ffffff;
+    padding: 40px 60px;
+    font-family: Arial, sans-serif;
+}
+
+/* QUESTIONS TEXT */
+.questions {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #e6f2ff;
+}
+
+/* FOOTER GRID */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+/* EACH COLUMN */
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* LINKS */
+.footer-item a {
+    color: #cce6ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* SEPARATOR LINE */
+.separation {
+    height: 6px;
+    background: linear-gradient(to right, #0b3c5d, #1e90ff);
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    footer {
+        padding: 30px 20px;
+    }
+
+    .questions {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav img {
+        width: 110px;
+    }
+
+    .hero {
+        padding: 0 5%;
+    }
+
+    .hero div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .but3 {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secImg video {
+        position: absolute;
+        top: 18%;
+        left: 10%;
+        width: 80%;
+    }
+}
+
+/*  EXTRA SMALL */
+@media (max-width: 480px) {
+
+    .hero .A {
+        font-size: 1.8rem;
+    }
+
+    .hero .B,
+    .hero .C {
+        font-size: 0.95rem;
+    }
+
+    .bux {
+        height: 180px;
+    }
+}
